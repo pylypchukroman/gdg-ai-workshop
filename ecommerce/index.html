@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elegance Flow Dress</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="details">
+        <h1>Elegance Flow Dress</h1>
+        <p>
+          A timeless and elegant dress designed for modern women. Featuring a
+          lightweight fabric that flows effortlessly, this dress is perfect for
+          any occasion—be it a dinner date, a formal event, or a casual day out.
+          Feel confident and stylish with every step.
+        </p>
+        <h3>Choose Colour:</h3>
+        <div class="colour-options">
+          <div
+            class="colour original"
+            style="background: #f4a7b9"
+            onclick="selectColour(this, true)"
+          ></div>
+          <div
+            class="colour"
+            style="background: #a67b5b"
+            onclick="selectColour(this, false)"
+          ></div>
+          <div
+            class="colour"
+            style="background: coral"
+            onclick="selectColour(this, false)"
+          ></div>
+          <div
+            class="colour"
+            style="background: teal"
+            onclick="selectColour(this, false)"
+          ></div>
+          <div
+            class="colour"
+            style="background: burlywood"
+            onclick="selectColour(this, false)"
+          ></div>
+        </div>
+        <p class="price">$89.99</p>
+        <button class="btn">Add to Cart</button>
+        <div class="remove-bird">
+          <label>
+            <input type="checkbox" id="removeBird" /> Remove Bird?
+          </label>
+        </div>
+      </div>
+      <div class="image" onclick="openModal()">
+        <span class="enlarge-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            fill="white"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+            />
+            <line
+              x1="12"
+              y1="6"
+              x2="12"
+              y2="18"
+              stroke="white"
+              stroke-width="2"
+            />
+            <line
+              x1="6"
+              y1="12"
+              x2="18"
+              y2="12"
+              stroke="white"
+              stroke-width="2"
+            />
+          </svg>
+        </span>
+        <img
+          src="https://res.cloudinary.com/tamas-demo/image/upload/f_auto,q_auto,w_390/model4.jpg"
+          alt="Elegance Flow Dress"
+        />
+      </div>
+    </div>
+
+    <div class="modal" id="imageModal" onclick="closeModal()">
+      <img
+        src="https://res.cloudinary.com/tamas-demo/image/upload/f_auto,q_auto,w_390/model4.jpg"
+        alt="Elegance Flow Dress"
+      />
+    </div>
+
+    <script defer type="module" src="/src/main.js"></script>
+    <script defer type="module">
+      import { selectColour, openModal, closeModal } from '/src/main.js';
+
+      window.selectColour = selectColour;
+      window.openModal = openModal;
+      window.closeModal = closeModal;
+    </script>
+  </body>
+</html>

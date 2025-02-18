@@ -1,0 +1,37 @@
+{
+  "name": "qa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "agent": "node --env-file=.env agent.js",
+    "chat": "node --env-file=.env chat.js",
+    "chat-stream": "node --env-file=.env chat-stream.js",
+    "chat-with-history": "node --env-file=.env chat-with-history.js",
+    "embedding": "node --env-file=.env embedding.js",
+    "ecommerce": "cd ecommerce && npm run dev",
+    "fine-tuning": "node --env-file=.env fine-tuning.js",
+    "function": "node --env-file=.env function.js",
+    "prompt": "node --env-file=.env prompt.js",
+    "prompt-stream": "node --env-file=.env prompt-stream.js",
+    "rag": "node --env-file=.env rag.js",
+    "recommendation": "node --env-file=.env --no-deprecation recommendation.js",
+    "recommendation-advanced": "node --env-file=.env --no-deprecation recommendation-advanced.js",
+    "structured": "node --env-file=.env structured-output.js",
+    "temperature": "node --env-file=.env temperature.js",
+    "weather": "node --env-file=.env no-live-information.js"
+  },
+  "keywords": [],
+  "author": "Tamas Piros",
+  "license": "FREE",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@google-cloud/bigquery": "^7.9.1",
+    "@google/generative-ai": "^0.21.0",
+    "@tensorflow-models/universal-sentence-encoder": "^1.3.3",
+    "@tensorflow/tfjs": "^4.22.0",
+    "cli-markdown": "^3.4.0",
+    "natural": "^8.0.1",
+    "yocto-spinner": "^0.2.0"
+  }
+}
